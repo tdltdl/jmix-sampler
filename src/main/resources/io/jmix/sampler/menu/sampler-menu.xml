@@ -753,6 +753,35 @@
             </item>
         </menu>
 
+        <menu id="tagpicker">
+            <item id="tagpicker-simple" docUrlSuffix="tag-picker"
+                  image="components/tagpicker/tagpicker-simple.png">
+                <otherFiles>
+                    <file name="io/jmix/sampler/entity/Order.java"/>
+                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
+                </otherFiles>
+            </item>
+            <item id="tagpicker-action" docUrlSuffix="tag-picker"
+                  image="components/tagpicker/tagpicker-action.png">
+                <otherFiles>
+                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
+                </otherFiles>
+            </item>
+            <item id="tagpicker-tagclick" docUrlSuffix="tag-picker"
+                  image="components/tagpicker/tagpicker-tagclick.png">
+                <otherFiles>
+                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
+                </otherFiles>
+            </item>
+            <item id="tagpicker-tagposition" docUrlSuffix="tag-picker"
+                  image="components/tagpicker/tagpicker-tagposition.png"
+                  splitEnabled="true">
+                <otherFiles>
+                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
+                </otherFiles>
+            </item>
+        </menu>
+
         <menu id="textarea">
             <item id="textarea-simple" docUrlSuffix="gui_TextArea"
                   image="components/textarea/textarea-simple.png"/>

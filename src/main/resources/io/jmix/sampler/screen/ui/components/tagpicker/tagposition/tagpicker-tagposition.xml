@@ -1,0 +1,27 @@
+<window xmlns="http://jmix.io/schema/ui/window">
+    <data>
+        <collection id="orderItemsDc"
+                    class="io.jmix.sampler.entity.OrderItem">
+            <fetchPlan extends="_local"/>
+            <loader id="orderItemsDl">
+                <query>
+                    <![CDATA[select e from sampler_OrderItem e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <facets>
+        <dataLoadCoordinator auto="true"/>
+    </facets>
+    <layout expand="hbox">
+        <hbox id="hbox"
+              spacing="true">
+            <tagPicker caption="msg://tagPickerBottom.caption"
+                       optionsContainer="orderItemsDc"
+                       width="100%"/>
+            <tagPicker caption="msg://tagPickerTop.caption"
+                       optionsContainer="orderItemsDc"
+                       tagPosition="TOP"/>
+        </hbox>
+    </layout>
+</window>
