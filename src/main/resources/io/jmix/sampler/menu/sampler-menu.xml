@@ -839,43 +839,6 @@
             </item>
         </menu>
 
-        <!-- todo Haulmont/jmix-sampler#19
-        <menu id="tokenlist">
-            <item id="tokenlist-simple" docUrlSuffix="gui_TokenList" image="components/tokenlist/tokenlist-simple.png">
-                <otherFiles>
-                    <file name="io/jmix/sampler/entity/Order.java"/>
-                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
-                </otherFiles>
-            </item>
-            <item id="tokenlist-simple-mode" docUrlSuffix="gui_TokenList"
-                  image="components/tokenlist/tokenlist-simple-mode.png">
-                <otherFiles>
-                    <file name="io/jmix/sampler/entity/Order.java"/>
-                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
-                    <file name="io/jmix/sampler/screen/entity/orderitem/OrderItemBrowse.java"/>
-                </otherFiles>
-            </item>
-            <item id="tokenlist-clear" docUrlSuffix="gui_TokenList" image="components/tokenlist/tokenlist-clear.png">
-                <otherFiles>
-                    <file name="io/jmix/sampler/entity/Order.java"/>
-                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
-                </otherFiles>
-            </item>
-            <item id="tokenlist-position" docUrlSuffix="gui_TokenList"
-                  image="components/tokenlist/tokenlist-position.png">
-                <otherFiles>
-                    <file name="io/jmix/sampler/entity/Order.java"/>
-                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
-                </otherFiles>
-            </item>
-            <item id="tokenlist-lookup" docUrlSuffix="gui_TokenList" image="components/tokenlist/tokenlist-lookup.png">
-                <otherFiles>
-                    <file name="io/jmix/sampler/entity/Order.java"/>
-                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
-                </otherFiles>
-            </item>
-        </menu>-->
-
         <menu id="tree">
             <item id="tree-simple" docUrlSuffix="gui_Tree" image="components/tree/tree-simple.png">
                 <otherFiles>
