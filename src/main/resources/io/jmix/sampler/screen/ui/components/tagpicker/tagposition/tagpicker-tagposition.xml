@@ -13,15 +13,30 @@
     <facets>
         <dataLoadCoordinator auto="true"/>
     </facets>
-    <layout expand="hbox">
-        <hbox id="hbox"
-              spacing="true">
-            <tagPicker caption="msg://tagPickerBottom.caption"
+    <layout expand="rightLeft"
+            spacing="true">
+        <hbox id="bottomTop"
+              spacing="true"
+              width="700px">
+            <tagPicker caption="msg://tagPicker.caption.bottom"
                        optionsContainer="orderItemsDc"
                        width="100%"/>
-            <tagPicker caption="msg://tagPickerTop.caption"
+            <tagPicker caption="msg://tagPicker.caption.top"
                        optionsContainer="orderItemsDc"
-                       tagPosition="TOP"/>
+                       tagPosition="TOP"
+                       width="100%"/>
+        </hbox>
+        <hbox id="rightLeft"
+              spacing="true"
+              width="700px">
+            <tagPicker caption="msg://tagPicker.caption.left"
+                       optionsContainer="orderItemsDc"
+                       tagPosition="LEFT"
+                       width="100%"/>
+            <tagPicker caption="msg://tagPicker.caption.right"
+                       optionsContainer="orderItemsDc"
+                       tagPosition="RIGHT"
+                       width="100%"/>
         </hbox>
     </layout>
 </window>

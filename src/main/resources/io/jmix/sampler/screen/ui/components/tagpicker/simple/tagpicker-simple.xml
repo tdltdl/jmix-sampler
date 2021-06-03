@@ -1,5 +1,11 @@
 <window xmlns="http://jmix.io/schema/ui/window">
     <data>
+        <instance id="orderDc"
+                  class="io.jmix.sampler.entity.Order">
+            <fetchPlan extends="_local">
+                <property name="items" fetchPlan="_local"/>
+            </fetchPlan>
+        </instance>
         <collection id="orderItemsDc"
                     class="io.jmix.sampler.entity.OrderItem">
             <fetchPlan extends="_local"/>
@@ -15,6 +21,8 @@
     </facets>
     <layout>
         <tagPicker id="tagPicker"
+                   dataContainer="orderDc"
+                   property="items"
                    optionsContainer="orderItemsDc"/>
     </layout>
 </window>
