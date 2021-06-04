@@ -29,7 +29,12 @@
         <propertyFilter property="customer"
                         operation="EQUAL"
                         dataLoader="ordersDl">
-            <entityComboBox optionsContainer="customersDc"/>
+            <entityComboBox optionsContainer="customersDc">
+                <actions>
+                    <action id="lookup" type="entity_lookup"/>
+                    <action id="clear" type="entity_clear"/>
+                </actions>
+            </entityComboBox>
         </propertyFilter>
         <table id="ordersTable"
                dataContainer="ordersDc"
