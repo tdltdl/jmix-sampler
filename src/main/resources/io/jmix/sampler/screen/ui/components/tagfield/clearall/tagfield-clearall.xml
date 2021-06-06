@@ -1,0 +1,11 @@
+<window xmlns="http://jmix.io/schema/ui/window">
+    <layout>
+        <tagField clearAllVisible="true">
+            <query entityClass="io.jmix.sampler.entity.Product"
+                   searchStringFormat="%${searchString}%"
+                   escapeValueForLike="true">
+                select e from sampler_Product e where e.name like :searchString escape '\'
+            </query>
+        </tagField>
+    </layout>
+</window>

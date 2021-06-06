@@ -1,0 +1,20 @@
+<window xmlns="http://jmix.io/schema/ui/window">
+    <data>
+        <instance id="orderDc"
+                  class="io.jmix.sampler.entity.Order">
+            <fetchPlan extends="_local">
+                <property name="items" fetchPlan="_instance_name"/>
+            </fetchPlan>
+        </instance>
+    </data>
+    <layout>
+        <tagField dataContainer="orderDc"
+                  property="items">
+            <query entityClass="io.jmix.sampler.entity.OrderItem"
+                   escapeValueForLike="true"
+                   searchStringFormat="%${searchString}%">
+                select e from sampler_OrderItem e where e.product.name like :searchString escape '\'
+            </query>
+        </tagField>
+    </layout>
+</window>
