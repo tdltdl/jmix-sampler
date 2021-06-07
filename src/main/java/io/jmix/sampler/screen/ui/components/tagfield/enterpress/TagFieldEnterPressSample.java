@@ -24,7 +24,6 @@ public class TagFieldEnterPressSample extends ScreenFragment {
     @Subscribe
     public void onInit(InitEvent event) {
         tagFieldNewItem.setEnterPressHandler(new TagField.NewTagProvider<Product>() {
-
             @Nullable
             @Override
             public Product create(String text) {
@@ -41,6 +40,4 @@ public class TagFieldEnterPressSample extends ScreenFragment {
                 .withCaption("Entered text: " + enterPressEvent.getText())
                 .show();
     }
-
-
 }

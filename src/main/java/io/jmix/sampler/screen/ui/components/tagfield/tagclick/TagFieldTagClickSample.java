@@ -22,6 +22,4 @@ public class TagFieldTagClickSample extends ScreenFragment {
                 .withCaption(event.getItem().getName())
                 .show();
     }
-
-
 }
