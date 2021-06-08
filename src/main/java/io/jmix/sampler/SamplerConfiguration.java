@@ -16,6 +16,7 @@
 
 package io.jmix.sampler;
 
+import com.vaadin.spring.annotation.UIScope;
 import io.jmix.core.Messages;
 import io.jmix.core.MetadataTools;
 import io.jmix.core.Stores;
@@ -54,6 +55,7 @@ public class SamplerConfiguration {
     }
 
     @Bean("sampler_AppUI")
+    @UIScope
     @Primary
     public AppUI appUI() {
         return new SamplerAppUI();
