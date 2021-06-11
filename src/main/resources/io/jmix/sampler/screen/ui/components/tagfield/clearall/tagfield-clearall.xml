@@ -1,10 +1,10 @@
 <window xmlns="http://jmix.io/schema/ui/window">
     <layout>
         <tagField clearAllVisible="true">
-            <query entityClass="io.jmix.sampler.entity.Product"
+            <query entityClass="io.jmix.sampler.entity.ProductTag"
                    searchStringFormat="%${searchString}%"
                    escapeValueForLike="true">
-                select e from sampler_Product e where e.name like :searchString escape '\'
+                select e from sampler_ProductTag e where lower(e.name) like lower(:searchString) escape '\'
             </query>
         </tagField>
     </layout>

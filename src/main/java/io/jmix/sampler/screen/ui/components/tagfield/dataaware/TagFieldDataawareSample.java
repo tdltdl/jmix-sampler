@@ -1,7 +1,7 @@
 package io.jmix.sampler.screen.ui.components.tagfield.dataaware;
 
 import io.jmix.core.Metadata;
-import io.jmix.sampler.entity.Order;
+import io.jmix.sampler.entity.Product;
 import io.jmix.ui.model.InstanceContainer;
 import io.jmix.ui.screen.ScreenFragment;
 import io.jmix.ui.screen.Subscribe;
@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class TagFieldDataawareSample extends ScreenFragment {
 
     @Autowired
-    private InstanceContainer<Order> orderDc;
+    private InstanceContainer<Product> productDc;
     @Autowired
     private Metadata metadata;
 
@@ -22,7 +22,7 @@ public class TagFieldDataawareSample extends ScreenFragment {
     public void onInit(InitEvent event) {
         // InstanceContainer initialization. It is usually done automatically if the screen is
         // inherited from StandardEditor and is used as an entity editor.
-        Order order = metadata.create(Order.class);
-        orderDc.setItem(order);
+        Product product = metadata.create(Product.class);
+        productDc.setItem(product);
     }
 }

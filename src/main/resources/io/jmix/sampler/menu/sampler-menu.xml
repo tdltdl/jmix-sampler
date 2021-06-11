@@ -757,33 +757,28 @@
             <item id="tagfield-dataaware" docUrlSuffix="tag-field"
                   image="components/tagfield/tagfield-dataaware.png">
                 <otherFiles>
-                    <file name="io/jmix/sampler/entity/Order.java"/>
-                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
                     <file name="io/jmix/sampler/entity/Product.java"/>
+                    <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
-            <item id="tagfield-simpletype" docUrlSuffix="tag-field"
-                  image="components/tagfield/tagfield-simpletype.png">
-                <otherFiles>
-                    <file name="io/jmix/sampler/entity/CustomerGrade.java"/>
-                </otherFiles>
-            </item>
+            <item id="tagfield-simple" docUrlSuffix="tag-field"
+                  image="components/tagfield/tagfield-simple.png"/>
             <item id="tagfield-clearall" docUrlSuffix="tag-field"
                   image="components/tagfield/tagfield-clearall.png">
                 <otherFiles>
-                    <file name="io/jmix/sampler/entity/Product.java"/>
+                    <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
             <item id="tagfield-enterpress" docUrlSuffix="tag-field"
                   image="components/tagfield/tagfield-enterpress.png">
                 <otherFiles>
-                    <file name="io/jmix/sampler/entity/Product.java"/>
+                    <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
             <item id="tagfield-tagclick" docUrlSuffix="tag-field"
                   image="components/tagfield/tagfield-tagclick.png">
                 <otherFiles>
-                    <file name="io/jmix/sampler/entity/Product.java"/>
+                    <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
         </menu>

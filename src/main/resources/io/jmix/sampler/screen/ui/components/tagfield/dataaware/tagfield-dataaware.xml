@@ -1,19 +1,22 @@
 <window xmlns="http://jmix.io/schema/ui/window">
     <data>
-        <instance id="orderDc"
-                  class="io.jmix.sampler.entity.Order">
+        <instance id="productDc"
+                  class="io.jmix.sampler.entity.Product">
             <fetchPlan extends="_local">
-                <property name="items" fetchPlan="_instance_name"/>
+                <property name="tags" fetchPlan="_local"/>
             </fetchPlan>
         </instance>
     </data>
+    <facets>
+        <dataLoadCoordinator auto="true"/>
+    </facets>
     <layout>
-        <tagField dataContainer="orderDc"
-                  property="items">
-            <query entityClass="io.jmix.sampler.entity.OrderItem"
+        <tagField dataContainer="productDc"
+                  property="tags">
+            <query entityClass="io.jmix.sampler.entity.ProductTag"
                    escapeValueForLike="true"
                    searchStringFormat="%${searchString}%">
-                select e from sampler_OrderItem e where e.product.name like :searchString escape '\'
+                select e from sampler_ProductTag e where lower(e.name) like lower(:searchString) escape '\'
             </query>
         </tagField>
     </layout>
