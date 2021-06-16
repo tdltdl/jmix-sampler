@@ -1,6 +1,7 @@
 package io.jmix.sampler.util;
 
 import com.google.common.collect.ImmutableMap;
+import io.jmix.core.CoreProperties;
 import io.jmix.core.Resources;
 import io.jmix.core.common.xmlparsing.Dom4jTools;
 import io.jmix.sampler.config.SamplerMenuItem;
@@ -21,6 +22,7 @@ import javax.annotation.Nullable;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 @Component("sampler_SamplerHelper")
@@ -36,11 +38,14 @@ public class SamplerHelper {
     protected ObjectProvider<XmlInheritanceProcessor> xmlInheritanceProcessor;
     @Autowired
     protected Dom4jTools dom4JTools;
+    @Autowired
+    protected CoreProperties coreProperties;
 
     public String getSamplerBrowserId() {
         return "sample-browser";
     }
 
+    @Nullable
     public String getFileContent(String src) {
         return resources.getResourceAsString(src);
     }
@@ -74,10 +79,14 @@ public class SamplerHelper {
 
     @Nullable
     public String findMessagePack(WindowInfo info) {
-        Element root = getWindowElement(info.getTemplate());
-        return (root != null)
-                ? getMessagePack(root)
-                : null;
+        Class<?> controllerClass = info.getControllerClass();
+        for (Locale locale : coreProperties.getAvailableLocales()) {
+            String messagesFileName = String.format("messages_%s.properties", locale.toString());
+            if (controllerClass.getResource(messagesFileName) != null) {
+                return controllerClass.getPackage().getName();
+            }
+        }
+        return null;
     }
 
     @Nullable
