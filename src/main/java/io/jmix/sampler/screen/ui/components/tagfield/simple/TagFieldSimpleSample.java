@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @UiDescriptor("tagfield-simple.xml")
 public class TagFieldSimpleSample extends ScreenFragment {
 
-    private List<String> tags = Arrays.asList("New", "Hit", "Guarantee", "Discount");
+    private List<String> tags = Arrays.asList("New", "Bestseller", "Guarantee", "Discount");
 
     @Install(to = "tagField", subject = "searchExecutor")
     private List<String> tagFieldSearchExecutor(String searchString, Map<String, Object> searchParams) {

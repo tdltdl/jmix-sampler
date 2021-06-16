@@ -65,26 +65,7 @@
         </insert>
         <insert tableName="SAMPLER_PRODUCT_TAG">
             <column name="ID" value="a19fd492-8a78-4682-b962-7e8e91543134"/>
-            <column name="NAME" value="Hit"/>
-        </insert>
-        <insert tableName="SAMPLER_PRODUCT_TAG">
-            <column name="ID" value="f8d0ce8d-a625-4fa0-beba-092db4dcd3ca"/>
-            <column name="NAME" value="New"/>
-        </insert>
-    </changeSet>
-
-    <changeSet author="sampler" id="5">
-        <insert tableName="SAMPLER_PRODUCT_TAG">
-            <column name="ID" value="bf312b24-e1ab-451b-9f9c-0e2089f23f34"/>
-            <column name="NAME" value="Discount"/>
-        </insert>
-        <insert tableName="SAMPLER_PRODUCT_TAG">
-            <column name="ID" value="a86157e4-f0d2-4903-8df5-5e0afc8d26a4"/>
-            <column name="NAME" value="Guarantee"/>
-        </insert>
-        <insert tableName="SAMPLER_PRODUCT_TAG">
-            <column name="ID" value="a19fd492-8a78-4682-b962-7e8e91543134"/>
-            <column name="NAME" value="Hit"/>
+            <column name="NAME" value="Bestseller"/>
         </insert>
         <insert tableName="SAMPLER_PRODUCT_TAG">
             <column name="ID" value="f8d0ce8d-a625-4fa0-beba-092db4dcd3ca"/>
@@ -106,7 +87,7 @@
         <!-- Laptop -->
         <insert tableName="SAMPLER_PRODUCT_PRODUCT_TAG_LINK">
             <column name="PRODUCT_ID" value="d7496b01-215d-f90c-7442-4d7e8c47848f"/>
-            <column name="PRODUCT_TAG_ID" value="a19fd492-8a78-4682-b962-7e8e91543134"/> <!-- Hit -->
+            <column name="PRODUCT_TAG_ID" value="a19fd492-8a78-4682-b962-7e8e91543134"/> <!-- Bestseller -->
         </insert>
         <insert tableName="SAMPLER_PRODUCT_PRODUCT_TAG_LINK">
             <column name="PRODUCT_ID" value="d7496b01-215d-f90c-7442-4d7e8c47848f"/>
