@@ -1329,6 +1329,39 @@
             </menu>
         </menu>
 
+        <menu id="stockCharts">
+            <item id="stockchart-multiple-datasets" splitEnabled="true"
+                  image="charts/stockchart-multiple-datasets.png">
+                <otherFiles>
+                    <file name="io/jmix/sampler/entity/DateValueVolume.java"/>
+                </otherFiles>
+            </item>
+            <item id="stockchart-stock-events" splitEnabled="true"
+                  image="charts/stockchart-stock-events.svg">
+                <otherFiles>
+                    <file name="io/jmix/sampler/entity/DateValueVolume.java"/>
+                </otherFiles>
+            </item>
+            <item id="stockchart-multiple-panels" splitEnabled="true"
+                  image="charts/stockchart-multiple-panels.svg">
+                <otherFiles>
+                    <file name="io/jmix/sampler/entity/StockData.java"/>
+                </otherFiles>
+            </item>
+            <item id="stockchart-intraday-data" splitEnabled="true"
+                  image="charts/stockchart-intraday-data.svg">
+                <otherFiles>
+                    <file name="io/jmix/sampler/entity/DateValueVolume.java"/>
+                </otherFiles>
+            </item>
+            <item id="stockchart-drawing" splitEnabled="true"
+                  image="charts/stockchart-drawing.png">
+                <otherFiles>
+                    <file name="io/jmix/sampler/entity/DateValueVolume.java"/>
+                </otherFiles>
+            </item>
+        </menu>
+
         <menu id="dataItems">
             <item id="entity-data-item" splitEnabled="true" image="charts/entity-data-item.png">
                 <otherFiles>
@@ -1355,13 +1388,12 @@
                     <file name="io/jmix/sampler/entity/PointValue.java"/>
                 </otherFiles>
             </item>
-            <!--  todo rp          -->
-            <!--            <item id="update-stock-chart" splitEnabled="true"
-                                  image="charts/update-stock-chart.png">-->
-            <!--                <otherFiles>-->
-            <!--                    <file name="io/jmix/sampler/entity/DateValueVolume.java"/>-->
-            <!--                </otherFiles>-->
-            <!--            </item>-->
+            <item id="update-stock-chart" splitEnabled="true"
+                  image="charts/update-stock-chart.png">
+                <otherFiles>
+                    <file name="io/jmix/sampler/entity/DateValueVolume.java"/>
+                </otherFiles>
+            </item>
         </menu>
 
         <menu id="other">

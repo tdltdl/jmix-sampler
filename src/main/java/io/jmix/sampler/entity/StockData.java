@@ -2,28 +2,62 @@ package io.jmix.sampler.entity;
 
 import io.jmix.core.entity.annotation.JmixGeneratedValue;
 import io.jmix.core.entity.annotation.JmixId;
-import io.jmix.core.metamodel.annotation.DependsOnProperties;
-import io.jmix.core.metamodel.annotation.InstanceName;
 import io.jmix.core.metamodel.annotation.JmixEntity;
-import io.jmix.core.metamodel.annotation.JmixProperty;
 
 import java.util.Date;
 import java.util.UUID;
 
 @JmixEntity
-public class DateValueVolume {
+public class StockData {
     @JmixGeneratedValue
     @JmixId
     private UUID id;
 
-    @JmixProperty(mandatory = true)
     private Date date;
 
-    @JmixProperty(mandatory = true)
     private Long value;
 
-    @JmixProperty(mandatory = true)
     private Long volume;
+
+    private Long open;
+
+    private Long close;
+
+    private Long high;
+
+    private Long low;
+
+    public Long getLow() {
+        return low;
+    }
+
+    public void setLow(Long low) {
+        this.low = low;
+    }
+
+    public Long getHigh() {
+        return high;
+    }
+
+    public void setHigh(Long high) {
+        this.high = high;
+    }
+
+    public Long getClose() {
+        return close;
+    }
+
+    public void setClose(Long close) {
+        this.close = close;
+    }
+
+    public Long getOpen() {
+        return open;
+    }
+
+    public void setOpen(Long open) {
+        this.open = open;
+    }
 
     public Long getVolume() {
         return volume;
@@ -57,18 +91,16 @@ public class DateValueVolume {
         this.id = id;
     }
 
-    @InstanceName
-    @DependsOnProperties({"date", "value", "volume"})
-    public String getInstanceName() {
-        return String.format("%s %s %s", date, value, volume);
-    }
-
     @Override
     public String toString() {
-        return "DateValueVolume{" +
+        return "StockData{" +
                 "date=" + date +
                 ", value=" + value +
                 ", volume=" + volume +
+                ", open=" + open +
+                ", close=" + close +
+                ", high=" + high +
+                ", low=" + low +
                 '}';
     }
 }
