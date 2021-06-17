@@ -831,31 +831,31 @@
             </item>
         </menu>
 
-        <menu id="tagpicker">
-            <item id="tagpicker-simple" docUrlSuffix="tag-picker"
+        <menu id="tagpicker" url="backoffice-ui/vcl/components">
+            <item id="tagpicker-simple" page="tag-picker"
                   image="components/tagpicker/tagpicker-simple.png">
                 <otherFiles>
-                    <file name="io/jmix/sampler/entity/Order.java"/>
-                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
+                    <file name="io/jmix/sampler/entity/Product.java"/>
+                    <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
-            <item id="tagpicker-action" docUrlSuffix="tag-picker"
+            <item id="tagpicker-action" page="tag-picker" anchor="tag-picker-action"
                   image="components/tagpicker/tagpicker-action.png">
                 <otherFiles>
-                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
+                    <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
-            <item id="tagpicker-tagclick" docUrlSuffix="tag-picker"
+            <item id="tagpicker-tagclick" page="tag-picker" anchor="handlers"
                   image="components/tagpicker/tagpicker-tagclick.png">
                 <otherFiles>
-                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
+                    <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
-            <item id="tagpicker-tagposition" docUrlSuffix="tag-picker"
+            <item id="tagpicker-tagposition" page="tag-picker" anchor="tag-position"
                   image="components/tagpicker/tagpicker-tagposition.png"
                   splitEnabled="true">
                 <otherFiles>
-                    <file name="io/jmix/sampler/entity/OrderItem.java"/>
+                    <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
         </menu>

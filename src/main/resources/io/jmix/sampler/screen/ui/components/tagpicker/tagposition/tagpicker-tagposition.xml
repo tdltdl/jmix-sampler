@@ -1,11 +1,11 @@
 <window xmlns="http://jmix.io/schema/ui/window">
     <data>
-        <collection id="orderItemsDc"
-                    class="io.jmix.sampler.entity.OrderItem">
+        <collection id="productTagsDc"
+                    class="io.jmix.sampler.entity.ProductTag">
             <fetchPlan extends="_local"/>
-            <loader id="orderItemsDl">
+            <loader id="productTagsDl">
                 <query>
-                    <![CDATA[select e from sampler_OrderItem e]]>
+                    <![CDATA[select e from sampler_ProductTag e]]>
                 </query>
             </loader>
         </collection>
@@ -19,10 +19,10 @@
               spacing="true"
               width="700px">
             <tagPicker caption="msg://tagPicker.caption.bottom"
-                       optionsContainer="orderItemsDc"
+                       optionsContainer="productTagsDc"
                        width="100%"/>
             <tagPicker caption="msg://tagPicker.caption.top"
-                       optionsContainer="orderItemsDc"
+                       optionsContainer="productTagsDc"
                        tagPosition="TOP"
                        width="100%"/>
         </hbox>
@@ -30,11 +30,11 @@
               spacing="true"
               width="700px">
             <tagPicker caption="msg://tagPicker.caption.left"
-                       optionsContainer="orderItemsDc"
+                       optionsContainer="productTagsDc"
                        tagPosition="LEFT"
                        width="100%"/>
             <tagPicker caption="msg://tagPicker.caption.right"
-                       optionsContainer="orderItemsDc"
+                       optionsContainer="productTagsDc"
                        tagPosition="RIGHT"
                        width="100%"/>
         </hbox>

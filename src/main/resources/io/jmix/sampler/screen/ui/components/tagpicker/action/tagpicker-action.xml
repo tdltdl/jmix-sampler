@@ -1,11 +1,11 @@
 <window xmlns="http://jmix.io/schema/ui/window">
     <data>
-        <collection id="orderItemsDc"
-                    class="io.jmix.sampler.entity.OrderItem">
+        <collection id="productTagDc"
+                    class="io.jmix.sampler.entity.ProductTag">
             <fetchPlan extends="_local"/>
             <loader id="orderItemsDl">
                 <query>
-                    <![CDATA[select e from sampler_OrderItem e]]>
+                    <![CDATA[select e from sampler_ProductTag e]]>
                 </query>
             </loader>
         </collection>
@@ -15,8 +15,8 @@
     </facets>
     <layout>
         <tagPicker id="tagPicker"
-                   metaClass="sampler_OrderItem"
-                   optionsContainer="orderItemsDc">
+                   metaClass="sampler_ProductTag"
+                   optionsContainer="productTagDc">
             <actions>
                 <action id="lookup" type="tag_lookup"/>
                 <action id="clear" type="value_clear"/>

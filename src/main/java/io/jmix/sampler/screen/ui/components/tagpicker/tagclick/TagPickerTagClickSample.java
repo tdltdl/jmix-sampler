@@ -1,6 +1,6 @@
 package io.jmix.sampler.screen.ui.components.tagpicker.tagclick;
 
-import io.jmix.sampler.entity.OrderItem;
+import io.jmix.sampler.entity.ProductTag;
 import io.jmix.ui.Notifications;
 import io.jmix.ui.component.TagPicker;
 import io.jmix.ui.screen.ScreenFragment;
@@ -17,7 +17,7 @@ public class TagPickerTagClickSample extends ScreenFragment {
     private Notifications notifications;
 
     @Subscribe("tagPicker")
-    public void onTagPickerTagClick(TagPicker.TagClickEvent<OrderItem> event) {
+    public void onTagPickerTagClick(TagPicker.TagClickEvent<ProductTag> event) {
         notifications.create(Notifications.NotificationType.HUMANIZED)
                 .withCaption(event.getItem().getInstanceName())
                 .show();
