@@ -788,41 +788,41 @@
             </item>
         </menu>
 
-        <menu id="tagfield">
-            <item id="tagfield-simple" docUrlSuffix="tag-field"
+        <menu id="tagfield" url="backoffice-ui/vcl/components">
+            <item id="tagfield-simple" page="tag-field"
                   image="components/tagfield/tagfield-simple.png"/>
-            <item id="tagfield-dataaware" docUrlSuffix="tag-field"
+            <item id="tagfield-dataaware" page="tag-field"
                   image="components/tagfield/tagfield-dataaware.png">
                 <otherFiles>
                     <file name="io/jmix/sampler/entity/Product.java"/>
                     <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
-            <item id="tagfield-clearall" docUrlSuffix="tag-field"
+            <item id="tagfield-clearall" page="tag-field" anchor="attributes"
                   image="components/tagfield/tagfield-clearall.png">
                 <otherFiles>
                     <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
-            <item id="tagfield-enterpress" docUrlSuffix="tag-field"
+            <item id="tagfield-enterpress" page="tag-field" anchor="creating-new-items"
                   image="components/tagfield/tagfield-enterpress.png">
                 <otherFiles>
                     <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
-            <item id="tagfield-tagclick" docUrlSuffix="tag-field"
+            <item id="tagfield-tagclick" page="tag-field" anchor="tag-click-listener"
                   image="components/tagfield/tagfield-tagclick.png">
                 <otherFiles>
                     <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
-            <item id="tagfield-captionprovider" docUrlSuffix="tag-field"
+            <item id="tagfield-captionprovider" page="tag-field" anchor="tag-caption-provider"
                   image="components/tagfield/tagfield-captionprovider.png">
                 <otherFiles>
                     <file name="io/jmix/sampler/entity/ProductTag.java"/>
                 </otherFiles>
             </item>
-            <item id="tagfield-styleprovider" docUrlSuffix="tag-field"
+            <item id="tagfield-styleprovider" page="tag-field" anchor="tag-style-provider"
                   image="components/tagfield/tagfield-styleprovider.png">
                 <otherFiles>
                     <file name="io/jmix/sampler/entity/ProductTag.java"/>
