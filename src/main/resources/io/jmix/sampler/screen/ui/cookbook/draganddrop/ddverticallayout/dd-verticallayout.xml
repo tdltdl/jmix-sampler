@@ -7,17 +7,17 @@
               width="100%"
               spacing="true"
               expand="rootSpacer">
-            <groupBox id="rootPalette"
+            <groupBox id="palette"
                       caption="msg://rootPalette.caption"
                       height="100%"
                       width="200px">
+                <scrollBox id="paletteScrollBox" width="100%" height="100%"/>
             </groupBox>
-            <groupBox id="rootDashboard"
+            <groupBox id="dashboard"
                       caption="msg://rootDashboard.caption"
                       width="500px"
                       height="100%">
-                <scrollBox id="dashboardScrollBox" width="100%" height="100%">
-                </scrollBox>
+                <scrollBox id="dashboardScrollBox" width="100%" height="100%"/>
             </groupBox>
             <label id="rootSpacer"/>
         </hbox>

@@ -26,17 +26,17 @@ public class DDVerticalLayoutSample extends ScreenFragment {
     private MessageBundle messageBundle;
 
     @Autowired
-    private GroupBoxLayout rootPalette;
+    private ScrollBoxLayout paletteScrollBox;
     @Autowired
     private ScrollBoxLayout dashboardScrollBox;
 
     @Subscribe
     public void onInit(InitEvent event) {
-        initPalette(rootPalette);
+        initPalette(paletteScrollBox);
         initDashboard(dashboardScrollBox);
     }
 
-    private void initPalette(GroupBoxLayout rootPalette) {
+    private void initPalette(ScrollBoxLayout paletteScrollBox) {
         DDVerticalLayout ddPalette = new DDVerticalLayout();
         ddPalette.setDragMode(LayoutDragMode.CLONE);
         ddPalette.addComponent(createPaletteButton("callBtn", messageBundle.getMessage("call.btn.caption")));
@@ -44,7 +44,7 @@ public class DDVerticalLayoutSample extends ScreenFragment {
         ddPalette.addComponent(createPaletteButton("meetingBtn", messageBundle.getMessage("meeting.btn.caption")));
         ddPalette.addComponent(createPaletteButton("buyBtn", messageBundle.getMessage("buy.btn.caption")));
 
-        rootPalette.withUnwrapped(JmixGroupBox.class, vGroupBox -> vGroupBox.addComponent(ddPalette));
+        paletteScrollBox.withUnwrapped(JmixScrollBoxLayout.class, vScrollBox -> vScrollBox.addComponent(ddPalette));
     }
 
     private JmixButton createPaletteButton(String id, String caption) {
